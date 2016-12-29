@@ -23,6 +23,8 @@ public class SecondActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        Toast.makeText(this, intent.getStringExtra("username"), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, intent.getStringExtra(String.valueOf(intent)), Toast.LENGTH_LONG).show();
+
+
     }
 }

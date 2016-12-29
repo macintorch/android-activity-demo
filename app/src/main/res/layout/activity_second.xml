@@ -11,23 +11,4 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ainor.com.my.multipleactivitiesdemo.SecondActivity">
 
-    <TextView
-        android:text="Second Activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="189dp"
-        android:id="@+id/textView"
-        android:textSize="36sp"/>
-
-    <Button
-        android:text="jump to 1st Activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:id="@+id/button2"
-        android:onClick="toFirstActivity"/>
 </RelativeLayout>
