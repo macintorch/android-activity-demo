@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
     public void toSecondActivity (View view) {
         Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
 
+        intent.putExtra("username", "ainor");
+
         startActivity(intent);
     }
 
