@@ -50,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                String getFriends = friends.get(i);
-
-                Log.i("Tapped Friend", getFriends);
-
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
 
-                intent.putExtra(getFriends, getFriends);
+                String getFriends = friends.get(i);
+
+                intent.putExtra("name", getFriends);
+
+                Log.i("Tapped Friend", getFriends);
 
                 startActivity(intent);
 
